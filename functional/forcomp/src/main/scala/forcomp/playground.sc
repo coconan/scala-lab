@@ -1,0 +1,1 @@
+"Robert".toLowerCase().groupBy(char => char).values
