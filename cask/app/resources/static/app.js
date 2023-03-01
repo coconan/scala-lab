@@ -3,9 +3,11 @@ function submitForm() {
     .then(response => response.json())
     .then(json => {
         if (json["success"]) {
-            messageList.innerHTML = json["txt"]
             msgInput.value = ""
         }
         errorDiv.innerText = json["err"]
     })
 }
+
+var socket = new WebSocket("ws://" + location.host + "/subscribe");
+socket.onmessage = function (ev) { messageList.innerHTML = ev.data }
