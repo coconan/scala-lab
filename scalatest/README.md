@@ -1,0 +1,2 @@
+- https://www.scalatest.org/quick_start
+- scala version should be 2.13
