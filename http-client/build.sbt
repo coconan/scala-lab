@@ -27,7 +27,9 @@ version := "1.0"
 
 libraryDependencies ++= Seq(
     "org.scala-lang.modules" %% "scala-parser-combinators" % "2.1.1",
-    "com.softwaremill.sttp.client4" %% "core" % "4.0.0-M3"
+    "com.softwaremill.sttp.client4" %% "core" % "4.0.0-M3",
+    "org.scalactic" %% "scalactic" % "3.2.16",
+    "org.scalatest" %% "scalatest" % "3.2.16" % "test"
 )
 
 // Here, `libraryDependencies` is a set of dependencies, and by using `+=`,
